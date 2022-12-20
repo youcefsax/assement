@@ -1,0 +1,54 @@
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-left: 50px;
+}
+.line-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.social ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+    margin-right: 50px;
+}
+.social ul li{
+    border-radius: 50%;
+    border: solid 1px black;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.line-two{
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+}
+.pages ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: flex-start;
+
+}
+.pages{
+    margin-left: 20px;
+}
+.like{
+    margin-right: 50px;
+}
+.like ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}

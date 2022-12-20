@@ -1,0 +1,26 @@
+.footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-left: 50px;
+    background-color: #F86338;
+    color: white;
+    padding-top: 50px;
+}
+.left-p{
+    max-width: 500px;
+    color: white !important;
+}
+ .footer ul{
+    list-style: none;
+    width: 200px;
+   
+    
+}
+.right ul{
+    margin-right: 50px;
+}
+ li{
+   margin-bottom: 15px;
+}

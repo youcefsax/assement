@@ -1,0 +1,30 @@
+.test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    background: #FFEFEB;
+    border-radius: 8px;
+    padding: 50px;
+}
+.test-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+}
+.test-container p{
+    width: 566px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #E2E2EA;
+    position: absolute;
+    top: 85px;
+}

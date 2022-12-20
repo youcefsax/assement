@@ -1,0 +1,102 @@
+.arrival-container{
+margin-top: 100px;    
+}
+.product-container{
+    display: flex;
+    overflow-x: visible;
+}
+
+.product-container .box{
+    width: 296px;
+height: 296px;
+}
+.product{
+    display: flex;
+    justify-content: center;
+}
+span{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    
+    text-align: center;
+    letter-spacing: 0.008em;
+    
+    /* Light/Text Link Color/Orange */
+    
+    color: #F3692E;
+    
+}
+h5{
+    font-family: 'Merriweather';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 120%;
+/* identical to box height, or 29px */
+width: 100px;
+text-align: center;
+letter-spacing: 0.005em;
+
+/* Light/Text Color/Title */
+height: 40px;
+overflow: hidden;
+color: #11142D;
+margin-right: 20px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin-left: 50px;
+
+}
+.title h5{
+    font-family: 'Merriweather';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+
+text-align: center;
+letter-spacing: 0.005em;
+
+/* Light/Secondary Color/50% */
+
+color: #F86338;
+
+}
+.product p{
+    height: 50px;
+    overflow: hidden;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+/* or 14px */
+display: flex;
+gap: 10px;
+text-align: center;
+letter-spacing: 0.008em;
+
+/* Light/Text Color/Body 1 */
+width: 100px;
+color: #515151;
+}
+.data{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-right: 20px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}

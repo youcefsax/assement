@@ -1,53 +1,38 @@
-import React from "react";
-import CardList from "../component/CardList";
-import SearchBox from "../component/SearchBox";
-import Scroll from "../component/Scroll";
-import { Component } from "react";
-import "./app.css"
+import React, { useState, useEffect } from "react";
+import { library } from '@fortawesome/fontawesome-svg-core'
+  import { fab } from '@fortawesome/free-brands-svg-icons'
+  import {  faHeart, faPhone, faUser, faBasketShopping } from '@fortawesome/free-solid-svg-icons'
+import Navbar from "./component/Navbar";
+import Home from "./component/Home";
+import "./app.css";
+import Footer from "./component/Footer";
 
-class App extends Component {
+library.add(fab, faHeart, faPhone, faUser, faBasketShopping)
 
-    constructor(){
-    super();
-    this.state={
-        robots:[],
-        search:""
-    }
-}
-componentDidMount(){
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response=>{
-       return response.json();
-    })
-    .then(users=>{
-        this.setState({robots: users});
-    });  
-    
-}
-searchcahnge=(e)=>{
-    this.setState({search:e.target.value})
-    
+const App=()=>  {
+const [product, setProduct]=useState([]);
+const [best, setBest]=useState([]);
+
+useEffect(()=>{
+  fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>setProduct(json));
+            fetch('https://fakestoreapi.com/products?limit=5')
+            .then(res=>res.json())
+            .then(json=>setBest(json));
+})
 
 
-    
-}
-
-
-    render(){
-        const fillterRobot=this.state.robots.filter((robot)=>{
-            return robot.name.toLowerCase().includes(this.state.search)
-        })
+console.log(product)
     return (
-    <div className="tc">
-        <h1 className="f1">RobotFriendBenglaze</h1>
-        <SearchBox onserachchange={this.searchcahnge}/>
-<Scroll>
-    <CardList robots={fillterRobot}/>
-</Scroll>
-</div>
-)
+<div>
+        <Navbar/>
+        <Home product={product} best={best}/>
+        <Footer/>
+        </div>
+        )
 }
 
-}
+
 
 export default App;
